@@ -27,7 +27,7 @@ async def main(request):
 
     # instead of mariatta, use your own username
     async with aiohttp.ClientSession() as session:
-        gh = gh_aiohttp.GitHubAPI(session, "mariatta",
+        gh = gh_aiohttp.GitHubAPI(session, "cjkrome",
                                   oauth_token=oauth_token)
 
         # call the appropriate callback for the event
